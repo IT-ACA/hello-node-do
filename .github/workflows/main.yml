@@ -32,5 +32,5 @@ jobs:
         script: | 
           cd hello-node-do
           git clone https://github.com/IT-ACA/hello-node-do.git
-          echo 'Deploy successful to Digital Ocean...'
+          echo 'Deploy successful to Digital Ocean..'
 
