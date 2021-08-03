@@ -25,6 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: jjst/action-digitalocean-deploy-app@v2
       with:
+        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
         host: ${{ secrets.SSH_HOST }}
         key: ${{ secrets.SSH_KEY }}
         username: ${{ secrets.SSH_USER }}
