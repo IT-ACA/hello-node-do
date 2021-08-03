@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: jjst/action-digitalocean-deploy-app@v2
+      - uses: appleboy/ssh-action@v0.1.2
       with:
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
         host: ${{ secrets.SSH_HOST }}
