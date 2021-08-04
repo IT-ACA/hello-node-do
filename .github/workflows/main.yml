@@ -29,12 +29,13 @@ jobs:
 
       with:
         node-version: ${{matrix.node-version}}
+        token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+        host: ${{ secrets.SSH_HOST }}
+        key: ${{ secrets.SSH_KEY }}
+        username: ${{ secrets.SSH_USER }}
 
-        run: | 
-          cd acawp1
-          git clone https://github.com/IT-ACA/hello-node-do.git
+        script: | 
           cd hello-node-do
-          npm i
-          npm start
-          echo 'Deploy successful to Digital Ocean.. app should be started'
+          git clone https://github.com/IT-ACA/hello-node-do.git
+          echo 'Deploy successful to Digital Ocean..' 
 
