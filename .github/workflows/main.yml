@@ -35,7 +35,7 @@ jobs:
         username: ${{ secrets.SSH_USER }}
 
         script: | 
-          cd hello-node-do
+          cd acawp1
           git clone https://github.com/IT-ACA/hello-node-do.git
           echo 'Deploy successful to Digital Ocean..' 
 
